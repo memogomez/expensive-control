@@ -1,14 +1,12 @@
+import './Index.css'
+import { ExpensiveFollowCard } from "./ExpensiveCard.jsx";
+
 export function App() {
     return (
-      <div className="container">
-        <article className="centered">
-          <strong>Expensive Control</strong>
-        </article>
-        <article>
-          <div>
-            <input type="number" className="custom-input" placeholder="Total" />
-          </div>
-        </article>
-      </div>
+        <>
+            <ExpensiveFollowCard text='Holis' quantity='25'/>
+            <ExpensiveFollowCard text='Adios' quantity='30'/>
+        </>
+        
     );
-  }
+}
