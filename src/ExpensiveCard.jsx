@@ -1,17 +1,17 @@
-export function ExpensiveFollowCard({text, quantity}) {
+export function ExpensiveFollowCard ({ text, quantity }) {
   return (
     <div>
-      <article className="container">
-        <strong>{ text }</strong>
+      <article className='container'>
+        <strong>{text}</strong>
       </article>
       <article>
         <div>
-          <input type="number" placeholder="Total" />
+          <input type='number' placeholder='Total' />
         </div>
         <div>
-          <strong>{ quantity }</strong>
+          <strong>{quantity}</strong>
         </div>
       </article>
     </div>
-  );
+  )
 }
