@@ -1,17 +1,18 @@
-export function ExpensiveFollowCard ({ text, quantity }) {
+export function ExpensiveFollowCard ({ title, description, imageUrl }) {
   return (
-    <div>
-      <article className='container'>
-        <strong>{text}</strong>
-      </article>
-      <article>
-        <div>
-          <input type='number' placeholder='Total' />
-        </div>
-        <div>
-          <strong>{quantity}</strong>
-        </div>
-      </article>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg bg-gray-200'>
+      <img className='w-full' src={imageUrl} alt={title} />
+      <div className='px-6 py-4'>
+        <div className='font-bold text-xl mb-2'>{title}</div>
+        <p className='text-gray-700 text-base'>
+          {description}
+        </p>
+      </div>
+      <div className='px-6 pt-4 pb-2'>
+        <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>#tag1</span>
+        <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>#tag2</span>
+        <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>#tag3</span>
+      </div>
     </div>
   )
 }

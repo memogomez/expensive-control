@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+    "React": "readonly"
+  },
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/"
+  ],
+  "extends": ["standard"
+
+  ],
+  "overrides": [
+    {
+      "files": ["*.jsx"],
+      "rules": {
+        "no-unused-vars": "off"
+      }
+    }
+  ]
+  
+}
